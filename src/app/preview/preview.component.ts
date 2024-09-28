@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './preview.component.scss'
 })
 export class PreviewComponent {
+
 }

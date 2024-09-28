@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<!-- app html -->
+
+<div class="CONTAINER">
+    <section class="input-section">
+        <router-outlet />
+    </section>
+    <section class="preview-section" *ngIf="isFormPage">
+        <app-preview />
+    </section>
+</div>

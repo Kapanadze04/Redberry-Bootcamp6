@@ -12,7 +12,7 @@ export class HomeComponent {
 
   constructor(private router: Router) {}
 
-  onPersonalPage() {
+  onPersonal() {
     this.router.navigate(['/personal-info']);
   }
 }
