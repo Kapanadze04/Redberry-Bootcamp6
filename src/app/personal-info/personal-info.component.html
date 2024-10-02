@@ -3,4 +3,45 @@
     [step]="'1/3'"
 />
 
-<button (click)="onExperience()">Go</button>
+<form>
+    <div class="flex-input">
+        <div class="block-input">
+            <label for="">სახელი</label>
+            <input type="text">
+            <span class="warning">მინიმუმ 2 ასო, ქართული ასოები</span>
+        </div>
+        <div class="block-input">
+            <label for="">გვარი</label>
+            <input type="text">
+            <span class="warning">მინიმუმ 2 ასო, ქართული ასოები</span>
+        </div>
+    </div>
+
+    <div class="flex-input">
+        <div class="block-input">
+            <h2>პირადი ფოტოს ატვირთვა</h2>
+        </div>
+        <div class="block-input"><button id="uploadBtn">ატვირთვა</button></div>
+    </div>
+
+    <div class="block-input">
+        <label>ჩემ შესახებ (არასავალდებულო)</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="block-input">
+        <label for="">ელ.ფოსტა</label>
+        <input type="email">
+        <span class="warning">უნდა მთავრდებოდეს redberry.ge-ით</span>
+    </div>
+
+    <div class="block-input">
+        <label for="">მობილურის ნომერი</label>
+        <input type="tel">
+        <span class="warning">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</span>
+    </div>
+
+    <div class="btn-wrapper">
+        <button (click)="onExperience()">შემდეგი</button>
+    </div>
+<form>

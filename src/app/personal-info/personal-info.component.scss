@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+input, textarea {
+    outline: none;
+
+    &:focus {
+        border: 2px solid $grayBc;
+    }
+}
+
+.btn-wrapper {
+    @include flex-end;
+}
