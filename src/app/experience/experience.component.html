@@ -2,4 +2,43 @@
     [title]="'გამოცდილება'" 
     [step]="'2/3'"
 />
-<button (click)="onEducation()">next</button>
+
+<form>
+    <div class="block-input">
+        <label>თანამდებობა</label>
+        <input type="text">
+        <span class="warning">მინიმუმ 2 სიმბოლო</span>
+    </div>
+    
+    <div class="block-input">
+        <label>დამსაქმებელი</label>
+        <input type="text">
+        <span class="warning">მინიმუმ 2 სიმბოლო</span>
+    </div>
+
+    <div class="flex-input">
+        <div class="block-input">
+            <label>დაწყების რიცხვი</label>
+            <input type="date">
+        </div>
+        <div class="block-input">
+            <label>დამთავრების რიცხვი</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <div class="block-input">
+        <label>აღწერა</label>
+        <textarea></textarea>
+    </div>
+    
+    <div class="add-btn-wrapper">
+        <button class="add-btn">მეტი გამოცდილების დამატება</button>
+    </div>
+    
+
+    <div class="btn-wrapper">
+        <button (click)="onPreviousPage()">უკან</button>
+        <button (click)="onEducation()">შემდეგი</button>
+    </div>
+<form>
