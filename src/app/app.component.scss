@@ -15,5 +15,6 @@
     .preview-section {
         width: 70%;
         height: 100%;
+        @include flex-column;
     }
 }
