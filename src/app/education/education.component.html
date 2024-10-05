@@ -2,3 +2,37 @@
     [title]="'განათლება'" 
     [step]="'3/3'"
 />
+
+<form>
+    <div class="block-input">
+        <label>სასწავლებელი</label>
+        <input type="text">
+        <span class="warning">მინიმუმ 2 სიმბოლო</span>
+    </div>
+
+    <div class="flex-input">           
+    <div class="block-input">                 <!--აქ უნდა დაემატოს სელექტი-->
+            <label>დაწყების რიცხვი</label>
+            <input type="date">
+        </div>
+        <div class="block-input">
+            <label>დამთავრების რიცხვი</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <div class="block-input">
+        <label>აღწერა</label>
+        <textarea></textarea>
+    </div>
+    
+    <div class="add-btn-wrapper">
+        <button class="add-btn">სხვა სასწავლებლის დამატება</button>
+    </div>
+    
+
+    <div class="btn-wrapper">
+        <button (click)="onPreviousPage()">უკან</button>
+        <button (click)="onEducation()">შემდეგი</button>
+    </div>
+<form>
