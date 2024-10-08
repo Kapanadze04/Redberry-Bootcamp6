@@ -69,11 +69,61 @@
         }
     }
 
-    .personal-output-box {
+    .personal-output-box,
+    .experience-output-box,
+    .education-output-box {
         border-bottom: 1px solid $grayBc;
         width: 100%;
         padding-bottom: 2em;
         margin-bottom: 2em;
+    }
+
+    .experience-info {
+        @include flex-column;
+
+        .work-experience {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $primary;
+            margin-bottom: 0.5em;
+        }
+
+        .work-date {
+            font-size: 1.6rem;
+            color: $spanColorSecond;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+
+        .work-p {
+            font-size: 1.6rem;
+            color: $black;
+            width: 655px;
+        }
+    }
+
+    .education-info {
+        @include flex-column;
+
+        .education {
+            font-size: 1.6rem;
+            color: $primary;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .education-date {
+            font-size: 1.6rem;
+            color: $spanColorSecond;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+
+        .education-p {
+            font-size: 1.6rem;
+            color: $black;
+            width: 655px;
+        }
     }
 }
 
